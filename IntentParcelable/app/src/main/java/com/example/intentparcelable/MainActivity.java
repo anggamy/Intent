@@ -54,16 +54,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.btn_move_with_data_activity:
             Intent moveWithDataIntent = new Intent(MainActivity.this, MoveWithDataActivity.class);
-            moveWithDataIntent.putExtra(MoveWithDataActivity.EXTRA_NAME, "Dani Kurnia");
-            moveWithDataIntent.putExtra(MoveWithDataActivity.EXTRA_AGE, "17");
+            moveWithDataIntent.putExtra(MoveWithDataActivity.EXTRA_NAME, "Angga Muhammad Yunus");
+            moveWithDataIntent.putExtra(MoveWithDataActivity.EXTRA_AGE, "18");
             startActivity(moveWithDataIntent);
             break;
 
             case R.id.btn_move_activity_object:
                 Person mPerson = new Person();
-                mPerson.setName("Dani Kurnia");
-                mPerson.setAge(17);
-                mPerson.setEmail("danikurnia629@gmail.com");
+                mPerson.setName("Angga Muhammad Yunus");
+                mPerson.setAge(18);
+                mPerson.setEmail("anggayunus46@gmail.com");
                 mPerson.setCity("Bandung");
                 Intent moveWithObjectIntent = new Intent(MainActivity.this, MoveWithObjectActivity.class);
                 startActivity(moveWithObjectIntent);
